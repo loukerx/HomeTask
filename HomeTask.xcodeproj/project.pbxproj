@@ -11,6 +11,8 @@
 		AE18B4EE23CDE44B00468DD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B4ED23CDE44B00468DD0 /* ViewController.swift */; };
 		AE18B4F323CDE45000468DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE18B4F223CDE45000468DD0 /* Assets.xcassets */; };
 		AE18B4F623CDE45000468DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE18B4F423CDE45000468DD0 /* LaunchScreen.storyboard */; };
+		AE18B50323CDE7B200468DD0 /* Canada.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B50223CDE7B200468DD0 /* Canada.swift */; };
+		AE18B50523CDE7C200468DD0 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B50423CDE7C200468DD0 /* Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		AE18B4F223CDE45000468DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE18B4F523CDE45000468DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE18B4F723CDE45000468DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE18B50223CDE7B200468DD0 /* Canada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canada.swift; sourceTree = "<group>"; };
+		AE18B50423CDE7C200468DD0 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +56,55 @@
 		AE18B4E823CDE44B00468DD0 /* HomeTask */ = {
 			isa = PBXGroup;
 			children = (
-				AE18B4E923CDE44B00468DD0 /* AppDelegate.swift */,
-				AE18B4ED23CDE44B00468DD0 /* ViewController.swift */,
+				AE18B50123CDE78700468DD0 /* Main */,
+				AE18B4FE23CDE6BD00468DD0 /* Controller */,
+				AE18B4FD23CDE6AF00468DD0 /* Model */,
+				AE18B4FF23CDE70A00468DD0 /* View */,
+				AE18B50023CDE71B00468DD0 /* Services */,
 				AE18B4F223CDE45000468DD0 /* Assets.xcassets */,
 				AE18B4F423CDE45000468DD0 /* LaunchScreen.storyboard */,
 				AE18B4F723CDE45000468DD0 /* Info.plist */,
 			);
 			path = HomeTask;
+			sourceTree = "<group>";
+		};
+		AE18B4FD23CDE6AF00468DD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE18B50223CDE7B200468DD0 /* Canada.swift */,
+				AE18B50423CDE7C200468DD0 /* Detail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE18B4FE23CDE6BD00468DD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE18B4ED23CDE44B00468DD0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE18B4FF23CDE70A00468DD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE18B50023CDE71B00468DD0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AE18B50123CDE78700468DD0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AE18B4E923CDE44B00468DD0 /* AppDelegate.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +179,8 @@
 			files = (
 				AE18B4EE23CDE44B00468DD0 /* ViewController.swift in Sources */,
 				AE18B4EA23CDE44B00468DD0 /* AppDelegate.swift in Sources */,
+				AE18B50523CDE7C200468DD0 /* Detail.swift in Sources */,
+				AE18B50323CDE7B200468DD0 /* Canada.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
