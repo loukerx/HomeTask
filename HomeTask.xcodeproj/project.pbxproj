@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		AE18B50C23CF16D100468DD0 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B50B23CF16D100468DD0 /* APIConfig.swift */; };
 		AE18B51123CF27AB00468DD0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B51023CF27AB00468DD0 /* MainViewModel.swift */; };
 		AE18B51323CF288C00468DD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B51223CF288C00468DD0 /* MainViewController.swift */; };
+		AE18B51523CF320C00468DD0 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B51423CF320C00468DD0 /* DetailTableViewCell.swift */; };
 		F3D9D36D3F535224F50D8C6F /* Pods_HomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10AF2359F5439673A52809D /* Pods_HomeTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		AE18B50B23CF16D100468DD0 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		AE18B51023CF27AB00468DD0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		AE18B51223CF288C00468DD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AE18B51423CF320C00468DD0 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		D10AF2359F5439673A52809D /* Pods_HomeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E47B5FB90900991854492C /* Pods-HomeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeTask.debug.xcconfig"; path = "Target Support Files/Pods-HomeTask/Pods-HomeTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 		AE18B4FF23CDE70A00468DD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE18B51423CF320C00468DD0 /* DetailTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,7 +151,6 @@
 				D4E47B5FB90900991854492C /* Pods-HomeTask.debug.xcconfig */,
 				0409A1660298185742E1DCA3 /* Pods-HomeTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -266,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE18B51523CF320C00468DD0 /* DetailTableViewCell.swift in Sources */,
 				AE18B4EE23CDE44B00468DD0 /* ViewController.swift in Sources */,
 				AE18B4EA23CDE44B00468DD0 /* AppDelegate.swift in Sources */,
 				AE18B50823CEE90200468DD0 /* Datastore.swift in Sources */,
