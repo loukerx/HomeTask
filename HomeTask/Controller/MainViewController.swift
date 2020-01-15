@@ -12,14 +12,21 @@ import Kingfisher
 class MainViewController: UITableViewController {
     
     private var details: [Detail]?
+    private var viewModel: MainViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        fetchCanadaData()
+        
+        setupUI()
+        configViewModel()
     }
 
-    private func settingUI() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.fetchCanadaDetails()
+    }
+    
+    private func setupUI() {
         refreshControl = UIRefreshControl()
         refreshControl!.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl!.addTarget(self, action: #selector(refreshCanadaData(_:)), for: .valueChanged)
@@ -34,12 +41,29 @@ class MainViewController: UITableViewController {
     }
     
     @objc private func refreshCanadaData(_ sender: Any) {
-        fetchCanadaData()
+        viewModel.fetchCanadaDetails()
     }
     
-    private func fetchCanadaData() {
-        // fetch data
-    }
+    // MARK: Config View Model
+     private func configViewModel() {
+         viewModel = MainViewModel(DataStore())
+         viewModel.updatedUI = { [weak self] response, error in
+             guard let self = self else { return }
+             if let error = error {
+                 self.showAlert(nil, error.errorDescription)
+             }
+             if let response = response {
+                self.title = response.title
+                if let details = response.details {
+                    self.details = details.filter { $0.title != nil }
+                }
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+             }
+         }
+     }
+ 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

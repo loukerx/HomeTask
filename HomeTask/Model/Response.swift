@@ -9,8 +9,8 @@
 import Foundation
 
 struct Response: Codable {
-    var title: String
-    var details: [Detail]
+    var title: String?
+    var details: [Detail]?
     
     enum CodingKeys: String, CodingKey
     {
