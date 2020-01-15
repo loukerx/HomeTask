@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AE18B4EA23CDE44B00468DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B4E923CDE44B00468DD0 /* AppDelegate.swift */; };
-		AE18B4EE23CDE44B00468DD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B4ED23CDE44B00468DD0 /* ViewController.swift */; };
 		AE18B4F323CDE45000468DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE18B4F223CDE45000468DD0 /* Assets.xcassets */; };
 		AE18B4F623CDE45000468DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE18B4F423CDE45000468DD0 /* LaunchScreen.storyboard */; };
 		AE18B50323CDE7B200468DD0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18B50223CDE7B200468DD0 /* Response.swift */; };
@@ -25,7 +24,6 @@
 		0409A1660298185742E1DCA3 /* Pods-HomeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeTask.release.xcconfig"; path = "Target Support Files/Pods-HomeTask/Pods-HomeTask.release.xcconfig"; sourceTree = "<group>"; };
 		AE18B4E623CDE44B00468DD0 /* HomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE18B4E923CDE44B00468DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE18B4ED23CDE44B00468DD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE18B4F223CDE45000468DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE18B4F523CDE45000468DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE18B4F723CDE45000468DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		AE18B4FE23CDE6BD00468DD0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AE18B4ED23CDE44B00468DD0 /* ViewController.swift */,
 				AE18B51223CF288C00468DD0 /* MainViewController.swift */,
 			);
 			path = Controller;
@@ -269,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE18B51523CF320C00468DD0 /* DetailTableViewCell.swift in Sources */,
-				AE18B4EE23CDE44B00468DD0 /* ViewController.swift in Sources */,
 				AE18B4EA23CDE44B00468DD0 /* AppDelegate.swift in Sources */,
 				AE18B50823CEE90200468DD0 /* Datastore.swift in Sources */,
 				AE18B50A23CF168A00468DD0 /* APIService.swift in Sources */,

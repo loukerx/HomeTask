@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mainController = ViewController()
+        let mainController = MainViewController()
         let navigationController = UINavigationController(rootViewController: mainController)
         navigationController.navigationBar.isTranslucent = false
         self.window?.rootViewController = navigationController
